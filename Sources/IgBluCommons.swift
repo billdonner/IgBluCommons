@@ -33,9 +33,9 @@ open class StandardController {
     open let router: Router
     open let configMgr: ConfigurationManager
     open  let serverConfig: ServerConfig
-    open   var jsonEndpointEnabled: Bool = true
-    open   var jsonEndpointDelay: UInt32 = 0
-    open  var globalData = GlobalData()
+    fileprivate   var jsonEndpointEnabled: Bool = true
+    fileprivate   var jsonEndpointDelay: UInt32 = 0
+    open  let globalData = GlobalData()
     open var port: Int {
         get { return configMgr.port }
     }
